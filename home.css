@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0ccf57;
+}
+
+.logo span {
+    color: #333;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.btn-order{
+ background: linear-gradient(rgba(56, 230, 40, 0.6), rgba(48, 58, 50, 0.6));  
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ .btn-primary {
+    background-color:  #5bd188;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero {
+ background: linear-gradient(rgba(31, 190, 17, 0.6), rgba(40, 92, 48, 0.6));  
+  background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+
+.menu-section {
+    padding: 50px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.menu-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 15px 0 10px;
+}
+
+.menu-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    color:  #ff5722;
+}
+.nav-links a.active {
+    color:  #08df5a;
+}

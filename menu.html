@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBites Menu</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("button.add-to-cart-btn").click(function(){
+ alert("Added To Cart ");
+ });
+});
+</script>
+</head>
+<body>
+  
+    <header class="navbar">
+        <div class="logo">Green<span>Bites</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    <section class="menu-header">
+        <h1>Our Delicious Menu</h1>
+        <p>Freshly prepared dishes made with premium local ingredients.</p>
+    </section>
+
+   
+    <div class="filter-container">
+        <button class="filter-btn active" onclick="filterMenu('all', this)">All</button>
+        <button class="filter-btn" onclick="filterMenu('burger', this)">Burger</button>
+        <button class="filter-btn" onclick="filterMenu('pizza', this)">Pizza</button>
+        <button class="filter-btn" onclick="filterMenu('desserts', this)">Desserts</button>
+    </div>
+
+  
+    <main class="menu-page-container">
+        <div class="full-menu-grid">
+          
+         
+            <div class="menu-item-card" data-category="burger">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/29819317/pexels-photo-29819317.jpeg" alt="Bacon BBQ Burger">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Burger</span>
+                    <div class="item-header">
+                        <h3>Bacon BBQ Burger</h3>
+                        <span class="page-price">120.00</span>
+                    </div>
+                    
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+           
+             <div class="menu-item-card" data-category="burger">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/9469654/pexels-photo-9469654.jpeg" alt="Spicy Jalapeño Burger">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Burger</span>
+                    <div class="item-header">
+                        <h3>Spicy Jalapeño Burger</h3>
+                        <span class="page-price">160.50</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+           
+
+         
+            <div class="menu-item-card" data-category="pizza">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/5640013/pexels-photo-5640013.jpeg" alt="Veggie Supreme Pizza">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Pizza</span>
+                    <div class="item-header">
+                        <h3>Veggie  Supreme   Pizza</h3>
+                        <span class="page-price">140.99</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item-card" data-category="pizza">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/31587851/pexels-photo-31587851.jpeg" alt="Pepperoni Pizza">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Pizza</span>
+                    <div class="item-header">
+                        <h3>Pepperoni Pizza</h3>
+                        <span class="page-price">170.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item-card" data-category="pizza">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/5638530/pexels-photo-5638530.jpeg" alt="Margherita Pizza">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Pizza</span>
+                    <div class="item-header">
+                        <h3>Margherita  Pizza</h3>
+                        <span class="page-price">140.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+
+           
+            <div class="menu-item-card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/4597835/pexels-photo-4597835.jpeg" alt="Chocolate Brownie">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Desserts</span>
+                    <div class="item-header">
+                        <h3>Chocolate Brownie</h3>
+                        <span class="page-price">150.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item-card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/17429510/pexels-photo-17429510.jpeg" alt="Cheesecake">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Desserts</span>
+                    <div class="item-header">
+                        <h3>Cheese Cake</h3>
+                        <span class="page-price">200.00</span>
+                    </div>
+                    
+                    <button class="add-to-cart-btn" onsubmit="">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item-card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/32288133/pexels-photo-32288133.jpeg" alt="Tiramisu">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Desserts</span>
+                    <div class="item-header">
+                        <h3>Tiramisu  </h3>
+                        <span class="page-price">150.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            <div class="menu-item-card" data-category="desserts">
+                <div class="card-img-wrapper">
+                    <img src="https://images.pexels.com/photos/17279074/pexels-photo-17279074.jpeg" alt="Vanilla Ice Cream">
+                </div>
+                <div class="menu-item-info">
+                    <span class="card-category-tag">Desserts</span>
+                    
+                    <div class="item-header">
+                        <h3>Vanilla Ice Cream</h3>
+                        <span class="page-price">160.00</span>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </main>
+
+
+    <script>
+        function filterMenu(category, btnElement) {
+           
+            document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            btnElement.classList.add('active');
+
+           
+            document.querySelectorAll('.menu-item-card').forEach(card => {
+                const cardCat = card.getAttribute('data-category');
+                if (category === 'all' || cardCat === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us </title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+   
+    <header class="navbar">
+        <div class="logo">Green<span>Bites</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+       
+    </header>
+
+    
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>Our Story</h1>
+            <p>Crafting unforgettable culinary memories since 2018.</p>
+        </div>
+    </section>
+
+   
+    <section class="story-section">
+        <div class="story-container">
+            <div class="story-text">
+                <h2>Passion On Every Single Plate</h2>
+                <p>TasteBites started as a small family food truck with one simple goal: serving honest, exceptionally delicious meals. We believe that great food brings people closer together.</p>
+                <p>Every single dish we prepare uses crisp, locally sourced farm produce, prime cuts of meat, and authentic culinary techniques refined over generations.</p>
+            </div>
+            <div class="story-image">
+               <video autoplay muted id="player" width="600" ></video>
+
+<script>
+const videos = [
+    "https://www.pexels.com/download/video/7219071/",
+    "https://www.pexels.com/download/video/8626674/",
+    "https://www.pexels.com/download/video/6286085/"
+];
+
+let current = 0;
+const player = document.getElementById("player");
+
+player.src = videos[current];
+
+player.addEventListener("ended", () => {
+    current = (current + 1) % videos.length;
+    player.src = videos[current];
+    player.play();
+});
+</script>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="values-section">
+        <h2>What We Stand For</h2>
+        <div class="values-grid">
+            <div class="value-card">
+                <div class="value-icon">🌱</div>
+                <h3>Fresh Ingredients</h3>
+                <p>Zero preservatives, organic greens, and fresh daily deliveries.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">🍳</div>
+                <h3>Expert Chefs</h3>
+                <p>Our kitchen hosts passionate culinary masters creating fresh art.</p>
+            </div>
+            <div class="value-card">
+                <div class="value-icon">❤️</div>
+                <h3>Top Service</h3>
+                <p>Treating every guest like a VIP member of our household.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
