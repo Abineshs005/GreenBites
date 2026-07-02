@@ -14,6 +14,14 @@
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+.btn-primary {
+    background-color:  #5bd188;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
 
 .logo {
     font-size: 30px;
