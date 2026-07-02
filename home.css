@@ -41,23 +41,8 @@
     font-weight: 600;
 }
 
-.btn-order{
- background: linear-gradient(rgba(56, 230, 40, 0.6), rgba(48, 58, 50, 0.6));  
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
 
- .btn-primary {
-    background-color:  #5bd188;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
+
 
 
 .hero {
